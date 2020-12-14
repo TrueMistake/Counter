@@ -1,0 +1,47 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/Banner-Recovered.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: .6;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin: 20px;
+    position: relative;
+    z-index: 2;
+}
+.item-counter{
+    color: #fff;
+    font-size: 50px;
+    font-family: Arial;
+    text-align: center;
+}
+.item-text{
+    color: #fff;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+}
